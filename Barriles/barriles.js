@@ -2,12 +2,7 @@ let Ubicaciones = ["La Madrid","La Madrid","La Madrid","La Madrid","La Madrid","
 let Pass = 5277;
 
 function Ubicacion(Barril) {
-  if (localStorage.getItem("DonPass") == Pass) {
-    alert(Ubicaciones[Barril]);
-  } else {
-    let Prompt = prompt("Ingresa la contraseña");
-    localStorage.setItem("DonPass", Prompt);
-  }
+  alert(Ubicaciones[Barril]);
 }
 
 function Barril1() {
