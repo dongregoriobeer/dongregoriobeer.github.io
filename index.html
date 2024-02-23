@@ -2,29 +2,35 @@
 <html lang="es">
 <head>
   <link rel="stylesheet" type="text/css" href="index.css">
-    <meta charset="UTF-8">
-    <title>DonGregorio</title>
+  <meta charset="UTF-8">
+  <title>DonGregorio</title>
 </head>
 <body>
-
   <noscript>
-    <style>* {display: none}; </style>
-</noscript>
+    <style>* {display: none;} </style>
+  </noscript>
   
   <script>
-    if(localStorage.getItem("DonPass" == null)){localStorage.setItem("DonPass", prompt("Ingresa la contraseña:"))}
-</script>
+    // Verificar si no hay nada guardado en localStorage con la clave "DonPass"
+    if(localStorage.getItem("DonPass") == null) {
+      // Si no hay nada guardado, pedir al usuario que ingrese una contraseña y guardarla en localStorage
+      var userInput = prompt("Ingresa la contraseña:");
+      if (userInput !== null) {
+        localStorage.setItem("DonPass", userInput);
+      }
+    }
+  </script>
 
   <br> <br>
   
-<div id="Botones">
-  <button><a href="/Barriles/1.html">Barril 1</a></button>
-  <button><a href="/Barriles/2.html">Barril 2</a></button>
-  <button><a href="/Barriles/3.html">Barril 3</a></button>
-  <button><a href="/Barriles/4.html">Barril 4</a></button>
-  <button><a href="/Barriles/5.html">Barril 5</a></button>
-  <button><a href="/Barriles/6.html">Barril 6</a></button>
-  <button><a href="/Barriles/7.html">Barril 7</a></button>
-</div>
+  <div id="Botones">
+    <button><a href="/Barriles/1.html">Barril 1</a></button>
+    <button><a href="/Barriles/2.html">Barril 2</a></button>
+    <button><a href="/Barriles/3.html">Barril 3</a></button>
+    <button><a href="/Barriles/4.html">Barril 4</a></button>
+    <button><a href="/Barriles/5.html">Barril 5</a></button>
+    <button><a href="/Barriles/6.html">Barril 6</a></button>
+    <button><a href="/Barriles/7.html">Barril 7</a></button>
+  </div>
 </body>
 </html>
