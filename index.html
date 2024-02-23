@@ -12,7 +12,7 @@
   
   <script>
     // Verificar si no hay nada guardado en localStorage con la clave "DonPass"
-    if(localStorage.getItem("DonPass") == null) {
+    while(localStorage.getItem("DonPass") == null) {
       // Si no hay nada guardado, pedir al usuario que ingrese una contraseña y guardarla en localStorage
       var userInput = prompt("Ingresa la contraseña:");
       if (userInput !== null) {
