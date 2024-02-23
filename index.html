@@ -11,13 +11,22 @@
   </noscript>
   
   <script>
-    // Verificar si no hay nada guardado en localStorage con la clave "DonPass"
-    while(localStorage.getItem("DonPass") == null) {
-      // Si no hay nada guardado, pedir al usuario que ingrese una contraseña y guardarla en localStorage
-      var userInput = prompt("Ingresa la contraseña:");
-      if (userInput !== null) {
-        localStorage.setItem("DonPass", userInput);
+    // Verificar si la contraseña ya ha sido guardada en localStorage
+    var storedPass = localStorage.getItem("DonPass");
+    
+    // Si no se ha guardado una contraseña previamente, o si la contraseña guardada es una cadena vacía
+    if (storedPass === null || storedPass === "") {
+      var userInput;
+      // Solicitar al usuario que ingrese una contraseña y guardarla en localStorage
+      while((userInput === null) || (userInput === "")) {
+        userInput = prompt("Ingresa la contraseña:");
+        // Verificar si el usuario canceló el prompt
+        if (userInput === null) {
+          alert("Por favor, ingresa una contraseña válida.");
+        }
       }
+      // Guardar la contraseña en localStorage
+      localStorage.setItem("DonPass", userInput);
     }
   </script>
 
