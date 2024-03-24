@@ -1,4 +1,4 @@
-const Pass = ${{ secrets.PASS }}
+const Pass = 5277
 document.addEventListener("DOMContentLoaded", Comprobacion())
 
 function Comprobacion() {
