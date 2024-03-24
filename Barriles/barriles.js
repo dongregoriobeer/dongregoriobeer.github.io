@@ -1,5 +1,4 @@
 let Ubicaciones = ["La Madrid","La Madrid","La Madrid","La Madrid","La Madrid","La Madrid","La Madrid"];
-let Pass = 5277;
 
 function Ubicacion(Barril) {
   alert(Ubicaciones[Barril]);
