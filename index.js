@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const Pass = process.env.PASS;
 document.addEventListener("DOMContentLoaded", Comprobacion())
 
