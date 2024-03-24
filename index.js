@@ -1,4 +1,4 @@
-const Pass = process.env.PASS;
+const Pass = ${{ secrets.PASS }}
 document.addEventListener("DOMContentLoaded", Comprobacion())
 
 function Comprobacion() {
