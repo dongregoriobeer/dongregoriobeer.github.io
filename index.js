@@ -3,7 +3,7 @@ require('dotenv').config();
 const Pass = process.env.PASS;
 document.addEventListener("DOMContentLoaded", Comprobacion())
 
-Comprobacion() {
+function Comprobacion() {
     while(localStorage.getItem("DonPass") == "" || localStorage.getItem("DonPass") == null){
     window.location.href = "https://dongregoriobeer.github.io/index.html";
  }
