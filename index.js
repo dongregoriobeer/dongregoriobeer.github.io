@@ -16,3 +16,7 @@ let Ubicaciones = ["La Madrid", "La Madrid", "La Madrid", "La Madrid", "La Madri
 function Ubicacion(Barril) {
   alert(Ubicaciones[Barril - 1]);
 }
+
+function Barril(barril) {
+   window.location.href = `Barriles/${barril}`;
+}
