@@ -1,9 +1,9 @@
 #Botones {
-  display: block;
   flex-direction: column;
   align-items: center;
 }
 
 button {
   font-size: 64.4px;
+  display: block;
 }
