@@ -1,7 +1,4 @@
-require('dotenv').config(); // Carga las variables de entorno de .env
-
-// Accede a la variable de entorno "DonPass"
-const Pass = process.env.DonPass;
+const Pass = 5277;
 
 function Comprobacion() {
         // Verificar si no hay nada guardado en localStorage con la clave "DonPass"
@@ -45,5 +42,4 @@ function Barril(barril) {
 
 window.onload = function() {
    Comprobacion();
-   
 }
