@@ -1,3 +1,6 @@
 #Botones {
   margin: 0 auto;
+  display: block;
+  font-size: 64.4px;
+  align-items: center;
 }
