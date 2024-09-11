@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-
-<iframe src="https://iplogger.com/2KFzx5" width="20" height="20"></iframe>
-
-    <noscript><style>* {display: none;}</style></noscript>
-    
-    <script src="../index.js"></script>
-
 <html lang="es">
 <head>
   <link rel="stylesheet" type="text/css" href="barriles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barril 5</title>
   <script src="barriles.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barril 5</title>
 </head>
-<body>
-    <h1>Barril 5</h1>
-      <h3>Estilo:</h3>
-      <h3>Tamaño: 50L</h3>
-  <button onclick="Ubicacion(5)">Ver Ubicación</button> <br> <br>
-  </button>
-    <button><a href="../index.html">Inicio</a></button>
+<body onload="getInfo('5')">
+  <h1>Barril 5</h1>
+  <h3>Tamaño: 50L</h3>
+
+  <h3>Estilo: <span class="estilo">??</span></h3>
+  <button onclick="modify('5','estilo')">Modificar</button>
+
+  <h3>Ubicación: <span class="ubicacion">??</span></h3>
+  <button onclick="modify('5','ubicacion')">Modificar</button>
+
+  <br><br>
+  <button><a href="../index.html">Inicio</a></button>
 </body>
 </html>
